@@ -31,6 +31,7 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 //$routes->get('/', 'Home::index');
 $routes->add('/', 'Home::index', ['namespace' => 'Modules\Home\Controllers']);
+$routes->add('/admin', 'Login::index', ['namespace' => 'Modules\Admin\Controllers']);
 
 /*
  * --------------------------------------------------------------------
